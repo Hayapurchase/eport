@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <style>
+      *{
+        margin: 0;
+      border: none;
+      padding: 0;
+      background-color:black;
+      color: white;
+      }
+      body{
+        height: 100%;
+        width: 100%;
+      }
+      .page_dom{
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 1;
+      }
+    nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+      background: black;
+      margin: 0;
+      border: none;
+      padding: 0;
+      height: 4em;
+    }
+    a{
+      color: white;
+      text-decoration: none;
+      font-style: normal;
+      font-family: fantasy;
+    }
+    .me{
+      display: flex;
+      flex-grow: 2;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-evenly;
+      
+    }
+    .projects{
+      height: 100%;
+      margin: 0;
+      border: none;
+      padding: 0;
+      display: flex;
+      flex-grow: 2;
+      align-items: center;
+      background-color: wheat;
+      justify-content: space-evenly;
+      border-top-left-radius: 5em;
+      border-bottom-left-radius: 5em;
+      border-color: white;
+      border-style:groove;
+      
+    }
+    img{
+      width: 20vw;
+      height: 10vh;
+    }
+    a{
+      filter: blur(1px);
+    }
+    a:hover{
+      filter: blur(0px);
+    }
+    .wrapper{
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+    .scrollcontainer{
+      width: 100%;
+      height: 500px;
+      background-color: white;
+      overflow-y: auto;
+    }
+    
+    @keyframes loadingbar {
+      0%   {background-color:red; left:-25%; }
+      25%  {background-color:yellow; left:-15%px;}
+      50%  {background-color:blue; left:0%px;}
+      75%  {background-color:green; left:15%px;}
+      100% {background-color:red; left:25%;}
+    }
+
+    .info{
+      position: relative;
+      animation-name: loadingbar;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function:ease-in-out;
+      animation-direction: alternate-reverse;
+      cursor: pointer;
+    }
+    @keyframes wiggle {
+      0%{transform: translateX(0px);opacity: 100%;}
+      100%{transform: translateX(150px); opacity: 0%;}
+    }
+    .infortainment{
+      
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+      animation-name: wiggle;
+      animation-duration: 5s;
+      animation-iteration-count: 1;
+      animation-timing-function:ease-in-out;
+      animation-direction: alternate-reverse;
+      cursor: pointer;
+      width: 50%;
+    }
+    #info{
+      overflow-y: auto;
+    }
+    .Hero{
+      font-size: 32px;
+      font-family: monospace;
+    }
+    footer{
+      display: flex;
+      position: absolute;
+      width: 100%;
+      bottom: 0%;
+      align-items: center;
+      justify-content:center;
+    }
+    .projo{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+
+    }
+    .col{
+      display: flex;
+      flex: 1;
+      padding: 5px;
+      border-top: solid 1px;
+      border-color: black;
+      justify-content: center;
+      animation-name: wiggle;
+      animation-duration: 3s;
+      animation-delay: 1ms;
+      animation-iteration-count: 1;
+      animation-timing-function:ease-in-out;
+      animation-direction: alternate-reverse;
+    }
+    .my_projects{
+      width: 100%;
+      font-size: 26px;
+      font-family: cursive;
+    }
+    .heading{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="page_dom">
+      <header>
+        <nav>
+          <div class="projects">
+            <a href="https://hayapurchase.github.io/htcanvas/"><img src="images/HTC.svg"></a>
+            <a href = "testgltf.html"><img src="images/test.svg"></a>
+            
+          </div>
+          
+          <div class="me">
+            <a href="index.html"><img src="images/Eric.svg"></a>
+            <a href="proficiency.html"><img src="images/Proficiency.svg"></a>
+          </div>
+        </nav>
+      </header>
+      <div class="wrapper">
+        <img src="images/Erics.svg" class="info">
+        <div class="scrollcontainer">
+          <div class= "Hero">
+            <div class="infortainment">
+              <h3>Get to know me</h3>
+              <div class="About_me">
+                <h4>About me</h4>
+                <h5>Eric Kulmicha</h5>
+                <h5 id = "info">Hello! I'm a passionate developer with a deep interest in gaming, game development, and the innovative technologies shaping the future of interactive experiences. Whether it’s creating immersive worlds or developing seamless user interfaces, I strive to merge creativity with functionality.
+
+                  As a game developer, I love exploring the possibilities of game design, from concept to execution. I’ve worked on several exciting game projects, delving into everything from 2D and 3D environments to implementing game mechanics and enhancing user experiences. I enjoy pushing the boundaries of what's possible in gaming, whether it’s through unique storytelling, mechanics, or visual design.
+                  
+                  In addition to game development, I specialize in web design and development, bringing aesthetic, responsive, and user-centered websites to life. I focus on creating seamless, intuitive interfaces that deliver smooth user experiences across platforms.
+                  
+                  I also have a keen interest in AI development, constantly exploring how artificial intelligence can be integrated into games and other applications to create more dynamic, adaptive, and intelligent experiences. Combining these areas of expertise, I am passionate about crafting engaging, innovative, and cutting-edge projects that push the envelope in game design and interactive technologies.
+                  
+                  Interest in Emerging Technologies
+                  
+                  I'm particularly excited by the potential of emerging technologies and how they can reshape the digital landscape. From augmented reality (AR) and virtual reality (VR) to blockchain, quantum computing, and advanced AI, I’m always on the lookout for new trends and innovations that can revolutionize how we build and experience games and applications. I believe these technologies will play a key role in the future of gaming, from enhancing player immersion with VR and AR to introducing new models of game economies through blockchain. Staying up-to-date with these advancements allows me to stay ahead of the curve and continually challenge myself to incorporate new ideas into my work.
+                  
+                  I’m eager to be part of the next wave of technological development and contribute to projects that explore and utilize these exciting advancements.</h5>
+              </div>
+              <div class="secondary">
+                <h4>Kenya Certificate of Secondary Education</h4>
+                <h5>Chogoria Boys High School</h5>
+                <h5>2016-2019</h5>
+              </div>
+              <div class="University">
+                <h4>Undergraduate</h4>
+                <h5>Strathmore University</h5>
+                <h5>2020-2024</h5>
+              </div>
+              <h4>Kenya Certificate of Secondary Education</h4>
+              <h5>Chogoria Boys High School</h5>
+              <h5>2016-2019</h5>
+            </div>
+          </div>
+        </div> 
+        <div class = my_projects>
+          <div class = "heading">
+            <h3>
+              My Projects
+            </h3>
+          </div>
+          
+          <div class="projo">
+            <div class="col">
+              <h4>HTCanvas</h4>
+            </div>
+            <div class="col">
+              <h4>Fake News Detector</h4>
+            </div>
+            <div class="col">
+              <h4>LONELY ZEBRA GAMES</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <footer>
+      <div class="company">
+
+      </div>
+      <div class="socials">
+        <h3>Contacts</h3>
+        <a href=""><img src="images/LI-Logo.png"></a>
+      </div>
+  </footer>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

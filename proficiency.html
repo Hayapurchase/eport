@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <style>
+      *{
+        margin: 0;
+      border: none;
+      padding: 0;
+      }
+    nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+      background: black;
+      margin: 0;
+      border: none;
+      padding: 0;
+      height: 50px;
+    }
+    a{
+      color: white;
+      text-decoration: none;
+      font-style: normal;
+      font-family: fantasy;
+    }
+    .me{
+      display: flex;
+      flex-grow: 2;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-evenly;
+      
+    }
+    .projects{
+      height: 100%;
+      margin: 0;
+      border: none;
+      padding: 0;
+      display: flex;
+      flex-grow: 2;
+      align-items: center;
+      background-color: wheat;
+      justify-content: space-evenly;
+      border-top-left-radius: 5em;
+      border-bottom-left-radius: 5em;
+      border-color: white;
+      border-style:groove;
+      
+    }
+    img{
+      width: 200px;
+    }
+    a{
+      filter: blur(1px);
+    }
+    a:hover{
+      filter: blur(0px);
+    }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="projects">
+        <a href="https://hayapurchase.github.io/htcanvas/"><img src="images/HTC.svg"></a>
+        <a href = "testgltf.html"><img src="images/test.svg"></a>
+        
+      </div>
+      
+      <div class="me">
+        <a href="index.html"><img src="images/Eric.svg"></a>
+        
+      </div>
+    </nav>
+    <canvas class="prof"></canvas>
+    <script type="module" src="proficiency.js"></script>
+  </body>
+</html>
